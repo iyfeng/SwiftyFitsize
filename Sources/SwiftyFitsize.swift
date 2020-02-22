@@ -89,9 +89,6 @@ public postfix func ~ (font: UIFont) -> UIFont {
 public postfix func ~ (value: Int) -> CGFloat {
     return CGFloat(value)~
 }
-public postfix func ~ (value: Float) -> CGFloat {
-    return CGFloat(value)~
-}
 public postfix func ~ (value: CGPoint) -> CGPoint {
     return CGPoint(
         x: value.x~,
@@ -130,9 +127,6 @@ public postfix func ≈ (font: UIFont) -> UIFont {
     return UIFont(name: font.fontName, size: font.pointSize≈) ?? font
 }
 public postfix func ≈ (value: Int) -> CGFloat {
-    return CGFloat(value)≈
-}
-public postfix func ≈ (value: Float) -> CGFloat {
     return CGFloat(value)≈
 }
 public postfix func ≈ (value: CGPoint) -> CGPoint {
